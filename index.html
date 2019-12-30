@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Password Generator</title>
-    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" defer>
 </head>
 <body class="px-4">
     <div class="container mx-auto px-6">
         <div class="result-container mx-auto">
-            <p>password</p>
+            <p id="passw">password</p>
         </div>
             <form class="decisions" id="form">
                 <label for="range">Number of characters</label>
                 <input type="range" min="2" max="25" name="range" id="inputRange">
                 <input type="number" min="2" max="25" name="number" value="5" id="inputNumber">
-                <br>
-                <input type="checkbox" name="includeLower" id="includeLower">
-                <label for="includeLower">Include lowercase letters</label>
                 <br>
                 <input type="checkbox" name="includeUpper" id="includeUpper">
                 <label for="includeUpper">Include uppercase letters</label>

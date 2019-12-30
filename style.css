@@ -1,21 +1,24 @@
 body{
-    background-color: rgb(163, 214, 22);
+    background: linear-gradient(to right, rgb(255, 251, 0), rgb(238, 152, 54));
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(204, 180, 183);
     border: 3px solid rgb(186, 243, 88);
-    background-color: rgb(115, 146, 4);
     color: wheat;
     padding: 5px;
     margin-top: 50px;
     text-align: center;
+    width: 95%;
+    min-height: 75%;
 }
 .result-container{
     text-align: center;
     padding: 15px;
-    font-size: 3em;
 }
 .decisions{
     text-align: left;
@@ -41,4 +44,13 @@ button{
     font-weight: bolder;
     padding: 10px;
     font-size: 1.2em;
+}
+#passw{
+    font-size: 2em;
+
+}
+@media (max-width: 700px){
+    #passw{
+        font-size: .7em;
+    }
 }
