@@ -19,7 +19,8 @@ const numbers_char_codes = arrayFromLowToHigh(48, 57);
 const symbols_char_codes = arrayFromLowToHigh(33,47)
                             .concat(arrayFromLowToHigh(58,64)
                             .concat(arrayFromLowToHigh(91,96)
-                            .concat(arrayFromLowToHigh(123,126))))
+                            .concat(arrayFromLowToHigh(168,175)
+                            .concat(arrayFromLowToHigh(123,126)))))
 
 const generatePasswordBtn = document.getElementById("generatePasswordBtn");
 const form = document.getElementById("form");
