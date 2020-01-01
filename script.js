@@ -12,6 +12,7 @@ function syncNumber(e){
     return uniValue;
 }
 
+// Get charcode values from ASCII table, through arrayFromLowToHigh function
 const uppercase_char_codes = arrayFromLowToHigh(65, 90);
 const lowercase_char_codes = arrayFromLowToHigh(97, 122);
 const numbers_char_codes = arrayFromLowToHigh(48, 57);
@@ -29,6 +30,8 @@ form.addEventListener("submit", e => {
     const includeUpper = document.getElementById("includeUpper").checked;
     const includeSymbols = document.getElementById("includeSymbols").checked;
     const includeNumbers = document.getElementById("includeNumbers").checked;
+
+    // Assign values of generatePassword function to variable
     const password = generatePassword(characterAmount, includeUpper, includeSymbols, includeNumbers)
 })
 
@@ -49,6 +52,8 @@ function generatePassword(characterAmount, includeUpper, includeSymbols, include
 
 }
 
+// Create function that loops through fields in ASCII table, based on a lowest number all the way to the high target number in the table.
+// Push values to an array and return its values.
 function arrayFromLowToHigh(low, high){
     const array = [];
     for (let i = low; i <= high; i++) {

@@ -1,6 +1,9 @@
 body{
     background: linear-gradient(to right, rgb(255, 251, 0), rgb(238, 152, 54));
 }
+h1{
+    font-size: 3em;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -10,29 +13,53 @@ body{
     background-color: rgb(204, 180, 183);
     border: 3px solid rgb(186, 243, 88);
     color: wheat;
-    padding: 5px;
-    margin-top: 50px;
+    padding: 5%;
+    margin-top: 20px;
     text-align: center;
-    width: 95%;
-    min-height: 75%;
+    width: 100%;
+    height: 95%;
+}
+
+@media (max-width: 800px){
+    input[type="checkbox"], label{
+        position: relative;
+        bottom: 10px;
+    }
+}
+input[type="number"]{
+    border: 1px solid black;
+    font-weight: bold;
 }
 .result-container{
     text-align: center;
     padding: 15px;
+    width: 90%;
+    
 }
 .decisions{
     text-align: left;
+  
+}
+@media (max-width: 800px){
+    .decisions{
+        display: block;
+    }
 }
 input, label{
     color: #0e0e0e;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     font-weight: normal;
+    padding: 10px;
 }
-checkbox{
-    width: 50px;
-    height: 50px; 
+
+@media (max-width: 800px){
+    input, label{
+        font-size: .9em;
+        padding: 2px;
+    }
 }
+
 #includeUpper, #includeSymbols, #includeLower, #includeNumbers{
     margin-top: 15px;
     background: black;
@@ -44,13 +71,22 @@ button{
     font-weight: bolder;
     padding: 10px;
     font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    outline: 1px solid wheat;
+    box-shadow: 4px 4px 4px rgb(238, 152, 54);
 }
-#passw{
-    font-size: 2em;
 
+#passw{
+    color: black;
+    padding: 5px;
+    font-size: 2em;
+    background-color: wheat;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgb(238, 152, 54);
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
     #passw{
-        font-size: .7em;
+        font-size: 1.3em;
     }
 }
